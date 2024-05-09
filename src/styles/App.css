@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.commentSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.commentContainer {
+  padding: 10px;
+  margin: 25px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  box-shadow:  10px 10px 16px -3px gray;
+  width: 330px
+}
+
+.replyContainer {
+  padding: 10px;
+  margin: 5px 25px;
+  border-radius: 5px;
+  background-color: #e5e5ee;
+}
+
+.author {
+  color: black;
+  margin: 0 20px 2px 0;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.text {
+  color: black;
+  font-size: 18px;
+}
+
+.reply {
+  margin: 5px 0;
+  margin-right: 4px;
+  background-color: #8cd3ff;
+  padding: 2px;
+  border-radius: 5px;
+}
+.delete {
+  margin: 5px 0;
+  padding: 2px;
+  border-radius: 5px;
+  margin-right: 4px;
+  background-color: #ffcbd1;
+}
+
+.cancel {
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 4px;
+  background-color: #ffcbd1;
+}
+
+.comments {
+  margin: 5px;
+  font-size: 14px;
+  margin-right: 4px;
+  border-radius: 5px;
+  background-color: #ddead1;
+}
+
+.edit {
+  padding: 2px 4px;
+  margin: 5px 4px 5px 0;
+  border-radius: 5px;
+  background-color: #ddead1;
+}
+
+.innerContainer {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.plainText {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px;
+}
+
+.newComment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.commentModalContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 20px;
+}
+
+.commentModalActionButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.commentAction {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.like {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
